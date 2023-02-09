@@ -1,0 +1,10 @@
+<form>
+    <meta>
+        <title>test form</title>
+        <author>developer</author>
+        <description>This is a test form meant for testing the features of this application.</description>
+    </meta>
+    <page>
+        <entryField prompt="What is your name?"></entryField>
+    </page>
+</form>
