@@ -14,32 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="v_layout">
-    <item>
-     <widget class="QScrollArea" name="scroll_area">
-      <property name="frameShape">
-       <enum>QFrame::NoFrame</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Plain</enum>
-      </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scroll_area_contents">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>747</width>
-         <height>529</height>
-        </rect>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_3"/>
-      </widget>
-     </widget>
-    </item>
-   </layout>
+   <layout class="QGridLayout" name="gridLayout"/>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -50,8 +25,55 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_Form"/>
+    <addaction name="actionSave_Document_2"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuForm">
+    <property name="title">
+     <string>Form</string>
+    </property>
+    <addaction name="actionSubmit"/>
+    <addaction name="actionView_Metadata"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuForm"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen_Form">
+   <property name="text">
+    <string>Open Form</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSubmit">
+   <property name="text">
+    <string>Submit</string>
+   </property>
+  </action>
+  <action name="actionView_Metadata">
+   <property name="text">
+    <string>View Metadata</string>
+   </property>
+  </action>
+  <action name="actionSave_Document">
+   <property name="text">
+    <string>Save Document</string>
+   </property>
+  </action>
+  <action name="actionSave_Document_2">
+   <property name="text">
+    <string>Save Document</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
