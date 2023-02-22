@@ -30,9 +30,11 @@ class MultipleChoiceWidget(QWidget):
         uic.loadUi("ui/multiple_choice_widget.ui", self)
         self.prompt_label.setText(prompt)
         # Create a radio button for every option
+        self.radio_buttons = []
         for option in options:
             radio_button = QRadioButton(parent=parent, text=option)
             self.layout().addWidget(radio_button)
+            self.radio_buttons.append(radio_button)
 
 
 class FormRendererWidget(QWidget):
